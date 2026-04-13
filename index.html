@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Empresa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+
+            <h1 class="text-2xl font-bold text-blue-600">Pulse Digital</h1>
+
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#" class="hover:text-blue-600">Inicio</a>
+                <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+                <a href="#nosotros" class="hover:text-blue-600">Nosotros</a>
+                <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+            </nav>
+
+            <button id="menuBtn" class="md:hidden text-2xl">
+                ☰
+            </button>
+
+        </div>
+
+        <div id="mobileMenu" class="hidden bg-white border-t">
+            <a href="#" class="block p-4 border-b">Inicio</a>
+            <a href="#servicios" class="block p-4 border-b">Servicios</a>
+            <a href="#nosotros" class="block p-4 border-b">Nosotros</a>
+            <a href="#contacto" class="block p-4">Contacto</a>
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+
+            <h2 class="text-5xl font-bold mb-6">
+                Soluciones Digitales para tu Empresa
+            </h2>
+
+            <p class="text-lg max-w-2xl mx-auto mb-8">
+                Ayudamos a empresas a crecer mediante tecnología, automatización y desarrollo digital moderno.
+            </p>
+
+            <div class="space-x-4">
+                <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+                    Empezar
+                </button>
+
+                <button class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600">
+                    Más información
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DISEÑO -->
+    <section class="relative bg-gray-100 py-24 overflow-hidden">
+
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold">Tecnología Interactiva</h2>
+            <p class="text-gray-600 mt-4">Mueve el cursor sobre las líneas</p>
+        </div>
+
+        <canvas id="linesCanvas" class="w-full h-72"></canvas>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20">
+        <div class="container mx-auto px-6">
+
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Nuestros Servicios
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">Desarrollo Web</h3>
+                    <p class="text-gray-600">
+                        Creación de páginas web modernas optimizadas para empresas y negocios.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">Marketing Digital</h3>
+                    <p class="text-gray-600">
+                        Campañas estratégicas para atraer clientes y aumentar ventas.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-3">Automatización</h3>
+                    <p class="text-gray-600">
+                        Automatizamos procesos para mejorar la eficiencia empresarial.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ESTADISTICAS -->
+    <section class="bg-blue-600 text-white py-20">
+        <div class="container mx-auto px-6">
+
+            <div class="grid md:grid-cols-4 text-center gap-8">
+
+                <div>
+                    <h3 class="text-4xl font-bold counter" data-target="150">0</h3>
+                    <p>Clientes</p>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl font-bold counter" data-target="300">0</h3>
+                    <p>Proyectos</p>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl font-bold counter" data-target="12">0</h3>
+                    <p>Años experiencia</p>
+                </div>
+
+                <div>
+                    <h3 class="text-4xl font-bold counter" data-target="24">0</h3>
+                    <p>Países</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="py-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="rounded-xl shadow">
+            </div>
+
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
+
+                <p class="text-gray-600 mb-4">
+                    Somos una empresa especializada en soluciones tecnológicas y desarrollo digital.
+                </p>
+
+                <p class="text-gray-600 mb-6">
+                    Nuestro equipo combina innovación, diseño moderno y tecnología para ayudar a empresas a crecer.
+                </p>
+
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                    Conocer más
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gray-900 text-white py-20 text-center">
+
+        <h2 class="text-4xl font-bold mb-6">
+            ¿Listo para comenzar tu proyecto?
+        </h2>
+
+        <p class="mb-8 text-gray-300">
+            Contáctanos hoy mismo y transforma tu negocio digitalmente.
+        </p>
+
+        <button class="bg-blue-600 px-8 py-4 rounded-lg text-lg hover:bg-blue-700">
+            Contactar
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contacto" class="bg-gray-800 text-gray-300 py-12">
+
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Pulse Digital</h3>
+                <p>
+                    Soluciones digitales modernas para empresas que buscan crecer.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Inicio</a></li>
+                    <li><a href="#" class="hover:text-white">Servicios</a></li>
+                    <li><a href="#" class="hover:text-white">Nosotros</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                <p>Email: contacto@empresa.com</p>
+                <p>Tel: +1 000 000 000</p>
+            </div>
+
+        </div>
+
+        <div class="text-center text-gray-500 mt-10">
+            © 2026 Pulse Digital. Todos los derechos reservados.
+        </div>
+
+    </footer>
+
+    <script>
+
+        // MENU MOBILE
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // CONTADOR ANIMADO
+        const counters = document.querySelectorAll(".counter");
+
+        counters.forEach(counter => {
+
+            counter.innerText = "0";
+
+            const updateCounter = () => {
+
+                const target = +counter.getAttribute("data-target");
+                const c = +counter.innerText;
+
+                const increment = target / 200;
+
+                if (c < target) {
+                    counter.innerText = `${Math.ceil(c + increment)}`;
+                    setTimeout(updateCounter, 10);
+                } else {
+                    counter.innerText = target;
+                }
+
+            };
+
+            updateCounter();
+
+        });
+
+    </script>
+
+    <script>
+
+        const canvas = document.getElementById("linesCanvas");
+        const ctx = canvas.getContext("2d");
+
+        let width;
+        let height;
+
+        let mouse = {
+            x: -1000,
+            y: -1000
+        };
+
+        function resize() {
+
+            width = canvas.offsetWidth;
+            height = canvas.offsetHeight;
+
+            canvas.width = width;
+            canvas.height = height;
+
+        }
+
+        window.addEventListener("resize", resize);
+        resize();
+
+        canvas.addEventListener("mousemove", e => {
+
+            const rect = canvas.getBoundingClientRect();
+
+            mouse.x = e.clientX - rect.left;
+            mouse.y = e.clientY - rect.top;
+
+        });
+
+        canvas.addEventListener("mouseleave", () => {
+            mouse.x = -1000;
+            mouse.y = -1000;
+        });
+
+        let lines = [];
+
+        for (let i = 0; i < 220; i++) {
+
+            lines.push({
+
+                x: Math.random() * width,
+                y: Math.random() * height,
+                speed: 0.1 + Math.random() * 0.5,
+                baseHeight: 10 + Math.random() * 15,
+                height: 6
+
+            });
+
+        }
+
+        function draw() {
+
+            ctx.clearRect(0, 0, width, height);
+
+            lines.forEach(line => {
+
+                // movimiento horizontal infinito
+                line.x += line.speed;
+
+                if (line.x > width) {
+                    line.x = 0;
+                    line.y = Math.random() * height;
+                }
+
+                // distancia al cursor
+                let dx = line.x - mouse.x;
+                let dy = line.y - mouse.y;
+
+                let dist = Math.sqrt(dx * dx + dy * dy);
+
+                let area = 80;
+
+                // estiramiento al pasar el mouse
+                if (dist < area) {
+
+                    line.height = 40;
+
+                    ctx.fillStyle = "#4338ca";
+                    ctx.fillRect(line.x - 20, line.y - 6, 40, 6);
+
+                } else {
+
+                    line.height += (line.baseHeight - line.height) * 0.1;
+
+                    ctx.beginPath();
+                    ctx.moveTo(line.x, line.y);
+                    ctx.lineTo(line.x, line.y - line.height);
+                    ctx.strokeStyle = "#4338ca";
+                    ctx.lineWidth = 3;
+                    ctx.stroke();
+
+                }
+
+            });
+
+            requestAnimationFrame(draw);
+
+        }
+
+        draw();
+
+    </script>
+
+</body>
+
+</html>
