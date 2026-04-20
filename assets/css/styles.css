@@ -1,0 +1,23 @@
+/* Base global */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+/* Mejora visual simple sin complicar el proyecto */
+#linesCanvas {
+    display: block;
+    width: 100%;
+    height: 18rem;
+}
+
+img {
+    object-fit: cover;
+}
