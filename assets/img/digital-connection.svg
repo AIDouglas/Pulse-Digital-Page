@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Conexión digital Pulse Digital">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9FCFF"/>
+      <stop offset="1" stop-color="#DCEAF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="360" cy="330" r="86" fill="#5396cb"/>
+  <circle cx="840" cy="330" r="86" fill="#7BAED4"/>
+  <circle cx="600" cy="560" r="110" fill="#5396cb" fill-opacity="0.18"/>
+  <path d="M430 330H770" stroke="#5396cb" stroke-width="18" stroke-linecap="round"/>
+  <path d="M520 500L360 330" stroke="#7BAED4" stroke-width="14" stroke-linecap="round"/>
+  <path d="M680 500L840 330" stroke="#7BAED4" stroke-width="14" stroke-linecap="round"/>
+  <rect x="470" y="510" width="260" height="100" rx="28" fill="white"/>
+  <rect x="508" y="540" width="184" height="18" rx="9" fill="#94B9D4"/>
+  <rect x="508" y="570" width="130" height="18" rx="9" fill="#5396cb"/>
+</svg>

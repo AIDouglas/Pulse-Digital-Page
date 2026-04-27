@@ -4,229 +4,409 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Empresa</title>
+    <meta name="description" content="Pulse Digital conecta marcas con sus audiencias mediante asesoría estratégica, atención al cliente y experiencias digitales.">
+    <title>Pulse Digital | Conectamos marcas al ritmo del mercado</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
-<body class="bg-gray-50">
-
+<body class="bg-slate-50 text-slate-800">
     <!-- NAVBAR -->
-    <header class="bg-white shadow-md fixed w-full z-50">
-        <div class="container mx-auto flex justify-between items-center p-4">
+    <header class="site-header fixed top-0 left-0 right-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+            <a href="#inicio" class="flex items-center gap-3">
+                <img src="assets/img/logo-pulse-digital.svg" alt="Logo de Pulse Digital" class="h-14 w-auto max-w-[260px] object-contain sm:h-16 sm:max-w-[320px]">
+            </a>
 
-            <h1 class="text-2xl font-bold text-blue-600">Pulse Digital</h1>
-
-            <nav class="hidden md:flex space-x-6 font-medium">
-                <a href="#" class="hover:text-blue-600">Inicio</a>
-                <a href="#servicios" class="hover:text-blue-600">Servicios</a>
-                <a href="#nosotros" class="hover:text-blue-600">Nosotros</a>
-                <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+            <nav class="hidden items-center gap-8 md:flex">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#metodologia" class="nav-link">Metodología</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contacto" class="btn-primary text-sm">Contacto</a>
             </nav>
 
-            <button id="menuBtn" class="md:hidden text-2xl">
+            <button id="menuBtn" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 bg-white text-xl text-slate-700 md:hidden" aria-label="Abrir menú">
                 ☰
             </button>
-
         </div>
 
-        <div id="mobileMenu" class="hidden bg-white border-t">
-            <a href="#" class="block p-4 border-b">Inicio</a>
-            <a href="#servicios" class="block p-4 border-b">Servicios</a>
-            <a href="#nosotros" class="block p-4 border-b">Nosotros</a>
-            <a href="#contacto" class="block p-4">Contacto</a>
+        <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+            <div class="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6 lg:px-8">
+                <a href="#inicio" class="mobile-link">Inicio</a>
+                <a href="#nosotros" class="mobile-link">Nosotros</a>
+                <a href="#servicios" class="mobile-link">Servicios</a>
+                <a href="#metodologia" class="mobile-link">Metodología</a>
+                <a href="#faq" class="mobile-link">FAQ</a>
+                <a href="#contacto" class="mobile-link font-semibold">Contacto</a>
+            </div>
         </div>
-
     </header>
 
-    <!-- HERO -->
-    <section class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <div class="container mx-auto px-6 text-center">
+    <main id="inicio" class="pt-24 sm:pt-28">
+        <!-- HERO -->
+        <section class="section-padding hero-grid">
+            <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+                <div>
+                    <p class="hero-kicker-badge mb-4 inline-flex rounded-full px-4 py-2 text-sm font-medium">
+                        Medellín · Marketing y desarrollo digital
+                    </p>
+                    <h1 class="max-w-2xl text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+                        Conectamos marcas al ritmo del mercado
+                    </h1>
+                    <p class="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+                        Pulse Digital acompaña a las empresas con asesoría estratégica, atención al cliente y experiencias digitales que fortalecen la relación con su audiencia.
+                    </p>
 
-            <h2 class="text-5xl font-bold mb-6">
-                Soluciones Digitales para tu Empresa
-            </h2>
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="#contacto" class="btn-primary">Hablemos de tu marca</a>
+                        <a href="#servicios" class="btn-secondary">Conoce nuestros servicios</a>
+                    </div>
 
-            <p class="text-lg max-w-2xl mx-auto mb-8">
-                Ayudamos a empresas a crecer mediante tecnología, automatización y desarrollo digital moderno.
-            </p>
+                    <div class="mt-10 grid gap-4 sm:grid-cols-3">
+                        <div class="info-pill">
+                            <span class="info-pill__label">Estrategia</span>
+                            <span class="info-pill__text">Decisiones más claras</span>
+                        </div>
+                        <div class="info-pill">
+                            <span class="info-pill__label">Cercanía</span>
+                            <span class="info-pill__text">Acompañamiento real</span>
+                        </div>
+                        <div class="info-pill">
+                            <span class="info-pill__label">Resultados</span>
+                            <span class="info-pill__text">Valor a largo plazo</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="space-x-4">
-                <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-                    Empezar
-                </button>
+                <div class="relative space-y-6">
+                    <div class="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-[0_20px_40px_rgba(15,23,42,0.06)]">
+                        <img src="assets/img/brand-team-visual.svg" alt="Equipo y experiencia digital de Pulse Digital" class="h-full w-full object-cover">
+                    </div>
 
-                <button class="border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600">
-                    Más información
-                </button>
+                    <div class="hero-card">
+                        <div class="hero-card__badge">Base estratégica</div>
+                        <h2 class="mt-6 text-2xl font-semibold text-slate-900">Una marca clara, cercana y orientada a resultados</h2>
+                        <p class="mt-4 text-slate-600">
+                            Traducimos el propósito de la empresa en una presencia digital coherente, útil y pensada para conectar mejor con clientes y audiencias.
+                        </p>
+
+                        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                            <div class="feature-mini">
+                                <span class="feature-mini__title">Asesoría estratégica</span>
+                                <span class="feature-mini__text">Ruta clara para decidir mejor</span>
+                            </div>
+                            <div class="feature-mini">
+                                <span class="feature-mini__title">Atención al cliente</span>
+                                <span class="feature-mini__text">Escucha, respuesta y seguimiento</span>
+                            </div>
+                            <div class="feature-mini sm:col-span-2">
+                                <span class="feature-mini__title">Experiencias digitales</span>
+                                <span class="feature-mini__text">Interacciones más claras y consistentes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- GALERIA VISUAL -->
+        <section class="section-padding bg-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="section-heading">
+                    <p class="section-kicker">Identidad visual</p>
+                    <h2 class="section-title">Con ustedes, una muestra de nuestros portafolios</h2>
+                    <p class="section-text">Estas piezas visuales son una base inicial. De momento, sigo recabando informacion en base al plan.</p>
+                </div>
 
-    <!-- DISEÑO -->
-    <section class="relative bg-gray-100 py-24 overflow-hidden">
+                <div class="grid gap-6 lg:grid-cols-3">
+                    <article class="visual-card">
+                        <img src="assets/img/logo-pulse-digital.svg" alt="Logo Pulse Digital" class="visual-card__image visual-card__image--contain">
+                        <div class="visual-card__body">
+                            <h3 class="card-title">Logo de marca</h3>
+                            <p class="card-text">Versión limpia para usar en navegación, pie de página y piezas institucionales.</p>
+                        </div>
+                    </article>
 
-        <div class="max-w-6xl mx-auto text-center mb-16">
-            <h2 class="text-4xl font-bold">Tecnología Interactiva</h2>
-            <p class="text-gray-600 mt-4">Mueve el cursor sobre las líneas</p>
-        </div>
+                    <article class="visual-card">
+                        <img src="assets/img/brand-team-visual.svg" alt="Ilustración de equipo Pulse Digital" class="visual-card__image">
+                        <div class="visual-card__body">
+                            <h3 class="card-title">Trabajo en equipo</h3>
+                            <p class="card-text">Visual pensado para acompañar el mensaje de asesoría, cercanía y acompañamiento.</p>
+                        </div>
+                    </article>
 
-        <canvas id="linesCanvas" class="w-full h-72"></canvas>
+                    <article class="visual-card">
+                        <img src="assets/img/digital-connection.svg" alt="Conexión digital Pulse Digital" class="visual-card__image">
+                        <div class="visual-card__body">
+                            <h3 class="card-title">Conexión digital</h3>
+                            <p class="card-text">Imagen de apoyo para secciones sobre estrategia, interacción y experiencia de marca.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    </section>
-
-    <!-- SERVICIOS -->
-    <section id="servicios" class="py-20">
-        <div class="container mx-auto px-6">
-
-            <h2 class="text-3xl font-bold text-center mb-12">
-                Nuestros Servicios
-            </h2>
-
-            <div class="grid md:grid-cols-3 gap-8">
-
-                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3">Desarrollo Web</h3>
-                    <p class="text-gray-600">
-                        Creación de páginas web modernas optimizadas para empresas y negocios.
+        <!-- SOBRE NOSOTROS -->
+        <section id="nosotros" class="section-padding bg-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="section-heading">
+                    <p class="section-kicker">Sobre nosotros</p>
+                    <h2 class="section-title">Estrategia, empatía y profesionalismo en una misma propuesta</h2>
+                    <p class="section-text">
+                        Pulse Digital es una empresa de marketing y desarrollo digital enfocada en conectar marcas con sus audiencias mediante soluciones coherentes con la identidad de cada negocio.
                     </p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3">Marketing Digital</h3>
-                    <p class="text-gray-600">
-                        Campañas estratégicas para atraer clientes y aumentar ventas.
+                <div class="grid gap-8 lg:grid-cols-3">
+                    <article class="card-soft">
+                        <h3 class="card-title">Quiénes somos</h3>
+                        <p class="card-text text-justify">Un aliado estratégico para empresas que buscan fortalecer su presencia digital y comunicar con más claridad.</p>
+                    </article>
+                    <article class="card-soft">
+                        <h3 class="card-title">Qué hacemos</h3>
+                        <p class="card-text text-justify">Acompañamos procesos de marca, atención y experiencia digital para generar valor real en el negocio.</p>
+                    </article>
+                    <article class="card-soft">
+                        <h3 class="card-title">Cómo pensamos</h3>
+                        <p class="card-text text-justify">Trabajamos con innovación, cercanía y profesionalismo para construir relaciones de largo plazo.</p>
+                    </article>
+                </div>
+
+                <div class="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+                    <div class="card-soft">
+                        <h3 class="card-title">Misión</h3>
+                        <p class="card-text">Acompañar a las empresas en su desarrollo digital mediante asesoría estratégica, atención cercana y experiencias que conecten marcas con sus audiencias de manera efectiva.</p>
+
+                        <h3 class="card-title mt-6">Visión</h3>
+                        <p class="card-text">Ser un aliado digital de referencia para marcas que buscan crecer con coherencia, innovación y un servicio orientado a relaciones de largo plazo.</p>
+                    </div>
+
+                    <div class="card-soft">
+                        <h3 class="card-title">Valores</h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li><strong class="text-slate-900">Innovación:</strong> buscar mejores formas de conectar y resolver.</li>
+                            <li><strong class="text-slate-900">Empatía:</strong> entender antes de proponer.</li>
+                            <li><strong class="text-slate-900">Profesionalismo:</strong> actuar con orden y claridad.</li>
+                            <li><strong class="text-slate-900">Cercanía:</strong> comunicar con humanidad.</li>
+                            <li><strong class="text-slate-900">Resultados a largo plazo:</strong> construir valor sostenible.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section-padding">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="section-heading">
+                    <p class="section-kicker">Servicios</p>
+                    <h2 class="section-title">Soluciones pensadas para mejorar la relación entre marca y audiencia</h2>
+                    <p class="section-text">Cada servicio está orientado a fortalecer la estrategia, la atención y la experiencia que vive el cliente con la marca.</p>
+                </div>
+
+                <div class="grid gap-8 lg:grid-cols-3">
+                    <article class="service-card">
+                        <span class="service-number">01</span>
+                        <h3 class="card-title">Asesoría estratégica</h3>
+                        <p class="card-text text-justify">Orientación para tomar decisiones digitales más claras, priorizar acciones y alinear objetivos con oportunidades reales.</p>
+                        <p class="card-note">Impacta en la claridad, el orden y la dirección del negocio.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">02</span>
+                        <h3 class="card-title">Atención al cliente</h3>
+                        <p class="card-text text-justify">Acompañamiento empático, rápido y profesional para cuidar cada punto de contacto con la audiencia.</p>
+                        <p class="card-note">Refuerza la confianza y mejora la percepción de marca.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-number">03</span>
+                        <h3 class="card-title">Experiencias digitales</h3>
+                        <p class="card-text text-justify">Soluciones que hacen más clara, útil y consistente la interacción entre la marca y sus usuarios.</p>
+                        <p class="card-note">Favorece la conexión, el posicionamiento y la usabilidad.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- METODOLOGIA -->
+        <section id="metodologia" class="section-padding bg-white">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="section-heading">
+                    <p class="section-kicker">Metodología</p>
+                    <h2 class="section-title">Escuchar, analizar, ejecutar y optimizar</h2>
+                    <p class="section-text">Un proceso simple, ordenado y centrado en el cliente para asegurar claridad y mejora continua.</p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                    <article class="step-card">
+                        <span class="step-index">1</span>
+                        <h3 class="card-title">Escuchar</h3>
+                        <p class="card-text text-justify">Comprendemos el contexto, los objetivos y las necesidades de la marca.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-index">2</span>
+                        <h3 class="card-title">Analizar</h3>
+                        <p class="card-text text-justify">Revisamos oportunidades, prioridades y puntos de mejora.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-index">3</span>
+                        <h3 class="card-title">Ejecutar</h3>
+                        <p class="card-text text-justify">Desarrollamos acciones alineadas con la estrategia y la experiencia esperada.</p>
+                    </article>
+                    <article class="step-card">
+                        <span class="step-index">4</span>
+                        <h3 class="card-title">Optimizar</h3>
+                        <p class="card-text text-justify">Ajustamos la propuesta con base en resultados y aprendizaje continuo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CULTURA -->
+        <section id="cultura" class="section-padding">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+                    <div class="section-heading section-heading--left">
+                        <p class="section-kicker">Cultura y filosofía</p>
+                        <h2 class="section-title">El éxito del cliente es nuestro éxito</h2>
+                        <p class="section-text">La cultura interna de Pulse Digital se construye desde la responsabilidad, el orden, la empatía y la calidad en cada interacción.</p>
+                    </div>
+
+                    <div class="card-soft">
+                        <h3 class="card-title">Cómo trabajamos</h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li>Escuchamos con atención antes de proponer.</li>
+                            <li>Respondemos con rapidez y claridad.</li>
+                            <li>Buscamos relaciones de confianza, no solo entregables.</li>
+                            <li>Priorizamos experiencias que aporten valor real.</li>
+                            <li>Medimos el éxito por el avance del cliente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VENTAJAS Y PUBLICO -->
+        <section class="section-padding bg-white">
+            <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+                <article class="card-soft">
+                    <p class="section-kicker">Ventajas competitivas</p>
+                    <h2 class="section-title section-title--small">Una propuesta que integra estrategia, servicio y experiencia</h2>
+                    <ul class="mt-6 space-y-3 text-slate-600">
+                        <li><strong class="text-slate-900">Acompañamiento estratégico:</strong> no solo ejecuta, también orienta.</li>
+                        <li><strong class="text-slate-900">Cercanía real:</strong> comunicación clara y trato humano.</li>
+                        <li><strong class="text-slate-900">Identidad coherente:</strong> alineación entre mensaje y experiencia.</li>
+                        <li><strong class="text-slate-900">Resultados sostenibles:</strong> foco en valor de largo plazo.</li>
+                    </ul>
+                </article>
+
+                <article class="card-soft">
+                    <p class="section-kicker">Público objetivo</p>
+                    <h2 class="section-title section-title--small">Marcas y empresas que quieren crecer con más claridad</h2>
+                    <p class="card-text mt-4">Nos dirigimos a organizaciones que buscan fortalecer su presencia digital, ordenar su comunicación y mejorar la forma en que se relacionan con su audiencia.</p>
+                    <div class="mt-6 grid gap-3 sm:grid-cols-2">
+                        <div class="chip">Empresas en transformación digital</div>
+                        <div class="chip">Marcas con foco en experiencia</div>
+                        <div class="chip">Negocios que necesitan estrategia</div>
+                        <div class="chip">Equipos que valoran cercanía</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-padding">
+            <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+                <div class="section-heading">
+                    <p class="section-kicker">FAQ</p>
+                    <h2 class="section-title">Preguntas frecuentes</h2>
+                    <p class="section-text">Resolvemos las dudas más comunes para facilitar el primer contacto.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <button class="faq-item" type="button" aria-expanded="false">
+                        <span>¿Qué hace diferente a Pulse Digital?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-panel hidden">Su enfoque como aliado estratégico, centrado en la cercanía, la empatía, la claridad y los resultados a largo plazo.</div>
+
+                    <button class="faq-item" type="button" aria-expanded="false">
+                        <span>¿Qué incluye la asesoría estratégica?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-panel hidden">Incluye análisis, orientación y acompañamiento para tomar decisiones digitales más claras y alineadas con los objetivos de la marca.</div>
+
+                    <button class="faq-item" type="button" aria-expanded="false">
+                        <span>¿Cómo trabajan la atención al cliente?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-panel hidden">Con comunicación clara, respuesta oportuna, empatía y seguimiento cuidadoso de cada interacción.</div>
+
+                    <button class="faq-item" type="button" aria-expanded="false">
+                        <span>¿A qué tipo de clientes acompañan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-panel hidden">A empresas y marcas que buscan fortalecer su presencia digital, mejorar su relación con los usuarios y crecer con una estrategia más ordenada.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section-padding bg-slate-950 text-white">
+            <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
+                <div>
+                    <p class="section-kicker">Contacto</p>
+                    <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Conversemos sobre tu proyecto</h2>
+                    <p class="mt-5 max-w-xl text-lg leading-8 text-slate-300">
+                        Si tu marca necesita una presencia digital más clara, estratégica y alineada con su propósito, Pulse Digital puede acompañarte.
                     </p>
+                    <p class="mt-5 text-slate-400">Conectamos marcas con su audiencia mediante innovación, cercanía y profesionalismo.</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition">
-                    <h3 class="text-xl font-bold mb-3">Automatización</h3>
-                    <p class="text-gray-600">
-                        Automatizamos procesos para mejorar la eficiencia empresarial.
-                    </p>
-                </div>
-
+                <form class="contact-form card-dark">
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <label class="field-label">
+                            Nombre
+                            <input type="text" class="field-input" placeholder="Tu nombre">
+                        </label>
+                        <label class="field-label">
+                            Correo
+                            <input type="email" class="field-input" placeholder="tu@correo.com">
+                        </label>
+                    </div>
+                    <label class="field-label mt-4">
+                        Empresa
+                        <input type="text" class="field-input" placeholder="Nombre de tu empresa">
+                    </label>
+                    <label class="field-label mt-4">
+                        Mensaje
+                        <textarea class="field-input min-h-32" placeholder="Cuéntanos qué necesita tu marca"></textarea>
+                    </label>
+                    <button type="button" class="btn-primary mt-6 w-full justify-center">Enviar mensaje</button>
+                    <p class="mt-4 text-sm text-slate-400">Texto base para formulario de contacto. La integración final se puede conectar después.</p>
+                </form>
             </div>
+        </section>
+    </main>
 
+    <footer class="border-t border-slate-200 bg-white py-8">
+        <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+            <p class="font-medium text-slate-700">Pulse Digital · Conectamos marcas al ritmo del mercado</p>
+            <p>Texto generico :v.</p>
         </div>
-    </section>
-
-    <!-- ESTADISTICAS -->
-    <section class="bg-blue-600 text-white py-20">
-        <div class="container mx-auto px-6">
-
-            <div class="grid md:grid-cols-4 text-center gap-8">
-
-                <div>
-                    <h3 class="text-4xl font-bold counter" data-target="150">0</h3>
-                    <p>Clientes</p>
-                </div>
-
-                <div>
-                    <h3 class="text-4xl font-bold counter" data-target="300">0</h3>
-                    <p>Proyectos</p>
-                </div>
-
-                <div>
-                    <h3 class="text-4xl font-bold counter" data-target="12">0</h3>
-                    <p>Años experiencia</p>
-                </div>
-
-                <div>
-                    <h3 class="text-4xl font-bold counter" data-target="24">0</h3>
-                    <p>Países</p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SOBRE NOSOTROS -->
-    <section id="nosotros" class="py-20">
-        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
-
-            <div>
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="rounded-xl shadow">
-            </div>
-
-            <div>
-                <h2 class="text-3xl font-bold mb-4">Sobre Nosotros</h2>
-
-                <p class="text-gray-600 mb-4">
-                    Somos una empresa especializada en soluciones tecnológicas y desarrollo digital.
-                </p>
-
-                <p class="text-gray-600 mb-6">
-                    Nuestro equipo combina innovación, diseño moderno y tecnología para ayudar a empresas a crecer.
-                </p>
-
-                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                    Conocer más
-                </button>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="bg-gray-900 text-white py-20 text-center">
-
-        <h2 class="text-4xl font-bold mb-6">
-            ¿Listo para comenzar tu proyecto?
-        </h2>
-
-        <p class="mb-8 text-gray-300">
-            Contáctanos hoy mismo y transforma tu negocio digitalmente.
-        </p>
-
-        <button class="bg-blue-600 px-8 py-4 rounded-lg text-lg hover:bg-blue-700">
-            Contactar
-        </button>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="contacto" class="bg-gray-800 text-gray-300 py-12">
-
-        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-
-            <div>
-                <h3 class="text-xl font-bold text-white mb-4">Pulse Digital</h3>
-                <p>
-                    Soluciones digitales modernas para empresas que buscan crecer.
-                </p>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-semibold mb-4">Enlaces</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-white">Inicio</a></li>
-                    <li><a href="#" class="hover:text-white">Servicios</a></li>
-                    <li><a href="#" class="hover:text-white">Nosotros</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-lg font-semibold mb-4">Contacto</h3>
-                <p>Email: pulsedigitalsas@gmail.com</p>
-                <p>Tel: +57 301 1088104</p>
-            </div>
-
-        </div>
-
-        <div class="text-center text-gray-500 mt-10">
-            © 2026 Pulse Digital. Todos los derechos reservados.
-        </div>
-
     </footer>
 
     <script src="assets/js/main.js" defer></script>
-
 </body>
 
 </html>

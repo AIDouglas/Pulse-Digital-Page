@@ -1,0 +1,32 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Equipo y experiencia digital Pulse Digital">
+  <defs>
+    <linearGradient id="g1" x1="120" y1="120" x2="1080" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FB"/>
+      <stop offset="1" stop-color="#D5E8F6"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="260" y1="220" x2="940" y2="690" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5396cb"/>
+      <stop offset="1" stop-color="#3E7EAF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#g1)"/>
+  <circle cx="960" cy="150" r="90" fill="#5396cb" fill-opacity="0.18"/>
+  <circle cx="180" cy="760" r="120" fill="#5396cb" fill-opacity="0.12"/>
+  <rect x="165" y="165" width="870" height="570" rx="34" fill="white" fill-opacity="0.85"/>
+  <rect x="245" y="235" width="280" height="28" rx="14" fill="#5396cb" fill-opacity="0.20"/>
+  <rect x="245" y="285" width="460" height="18" rx="9" fill="#94B9D4" fill-opacity="0.55"/>
+  <rect x="245" y="318" width="380" height="18" rx="9" fill="#94B9D4" fill-opacity="0.45"/>
+  <rect x="245" y="390" width="240" height="240" rx="28" fill="url(#g2)"/>
+  <circle cx="365" cy="470" r="72" fill="white" fill-opacity="0.82"/>
+  <path d="M332 512C342 476 360 458 380 458C400 458 418 476 428 512" stroke="#5396cb" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="365" cy="438" r="26" fill="#5396cb"/>
+  <rect x="522" y="390" width="400" height="60" rx="22" fill="#EEF6FB"/>
+  <rect x="522" y="474" width="330" height="60" rx="22" fill="#EEF6FB"/>
+  <rect x="522" y="558" width="370" height="60" rx="22" fill="#EEF6FB"/>
+  <circle cx="562" cy="420" r="16" fill="#5396cb"/>
+  <circle cx="562" cy="504" r="16" fill="#5396cb"/>
+  <circle cx="562" cy="588" r="16" fill="#5396cb"/>
+  <rect x="602" y="409" width="250" height="14" rx="7" fill="#4F6780" fill-opacity="0.55"/>
+  <rect x="602" y="493" width="210" height="14" rx="7" fill="#4F6780" fill-opacity="0.55"/>
+  <rect x="602" y="577" width="230" height="14" rx="7" fill="#4F6780" fill-opacity="0.55"/>
+</svg>
