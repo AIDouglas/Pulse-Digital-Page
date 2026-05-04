@@ -29,6 +29,10 @@ section {
     padding-bottom: 5rem;
 }
 
+.section-padding-top-reduced {
+    padding-top: 1rem;
+}
+
 .hero-grid {
     background:
         radial-gradient(circle at top left, var(--brand-blue-soft), transparent 35%),
@@ -202,8 +206,7 @@ section {
 }
 
 .visual-card__image--contain {
-    object-fit: contain;
-    padding: 1.5rem;
+    object-fit: cover;
 }
 
 .visual-card__body {
@@ -225,7 +228,7 @@ section {
 .card-text,
 .card-note {
     text-align: justify;
-    hyphens: auto;
+    hyphens: none;
 }
 
 .card-note {
@@ -366,5 +369,172 @@ section {
     .section-padding {
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+}
+/* Grid columns support */
+.lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+@media (max-width: 1023px) {
+    .lg\:grid-cols-5 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CARRUSEL DE MARCAS */
+.brands-carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 3rem;
+    animation: scroll 25s linear infinite;
+    padding: 2rem 0;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+    border-color: var(--brand-blue);
+}
+
+.brand-logo-carousel {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 6 - 3rem * 6));
+    }
+}
+
+/* CASOS DE ÉXITO */
+.case-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.case-card:hover {
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+    transform: translateY(-4px);
+}
+
+.case-image-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.case-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.case-card:hover .case-image {
+    transform: scale(1.08);
+}
+
+.case-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(83, 150, 203, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-card:hover .case-overlay {
+    opacity: 1;
+}
+
+.case-badge {
+    background: #fff;
+    color: var(--brand-blue);
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.case-content {
+    padding: 1.75rem;
+}
+
+.case-metrics {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.metric {
+    display: inline-block;
+    background: var(--brand-blue-soft);
+    color: var(--brand-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* Animación carrusel suave en móvil */
+@media (max-width: 1023px) {
+    .carousel-track {
+        gap: 2rem;
+    }
+
+    .carousel-item {
+        width: 150px;
+        height: 100px;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-150px * 6 - 2rem * 6));
+        }
     }
 }
