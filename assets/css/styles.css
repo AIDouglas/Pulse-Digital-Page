@@ -409,16 +409,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 1rem;
+    background: transparent;
     transition: all 0.3s ease;
 }
 
 .carousel-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
-    border-color: var(--brand-blue);
+    opacity: 0.8;
 }
 
 .brand-logo-carousel {
@@ -536,5 +533,22 @@ section {
         100% {
             transform: translateX(calc(-150px * 6 - 2rem * 6));
         }
+    }
+}
+
+/* Mensajes de éxito y error del formulario */
+[data-fs-success]:not(.hidden),
+[data-fs-error]:not(.hidden) {
+    animation: slideInDown 0.4s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -1,4 +1,12 @@
-document.addEventListener('DOMContentLoaded', () => {
+// Inicializar interacciones cuando el documento esté listo
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupEventListeners);
+} else {
+    setupEventListeners();
+}
+
+function setupEventListeners() {
+    // Menú móvil
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
@@ -14,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // FAQ
     const faqButtons = document.querySelectorAll('.faq-item');
 
     faqButtons.forEach((button) => {
@@ -43,4 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+}
