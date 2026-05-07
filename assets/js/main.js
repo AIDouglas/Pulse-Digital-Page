@@ -6,23 +6,35 @@ if (document.readyState === 'loading') {
 }
 
 function setupEventListeners() {
-    // Menú móvil
+    // Menú móvil con animación
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
     if (menuBtn && mobileMenu) {
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            
+            if (isHidden) {
+                // Abrir menú
+                mobileMenu.classList.remove('hidden');
+                menuBtn.style.transform = 'rotate(90deg)';
+            } else {
+                // Cerrar menú
+                mobileMenu.classList.add('hidden');
+                menuBtn.style.transform = 'rotate(0deg)';
+            }
         });
 
+        // Cerrar menú cuando se hace click en un enlace
         mobileMenu.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
+                menuBtn.style.transform = 'rotate(0deg)';
             });
         });
     }
 
-    // FAQ
+    // FAQ con animación
     const faqButtons = document.querySelectorAll('.faq-item');
 
     faqButtons.forEach((button) => {
